@@ -1,0 +1,9 @@
+#BlueJ class context
+comment0.target=TouchButton
+comment1.params=direction
+comment1.target=TouchButton(java.lang.String)
+comment2.params=
+comment2.target=void\ createImages()
+comment3.params=
+comment3.target=void\ act()
+numComments=4
