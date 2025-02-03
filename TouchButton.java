@@ -33,10 +33,10 @@ public class TouchButton extends Actor {
             setImage(pressedImage);
             isPressed = true;
         }
-        // if (Greenfoot.mouseClicked(null) && isPressed) {
-            // setImage(baseImage);
-            // isPressed = false;
-            // ((SnakeWorld) getWorld()).getSnake().setDirection(direction);
-        // }
+        if (Greenfoot.mouseClicked(null) && isPressed) {
+            setImage(baseImage);
+            isPressed = false;
+            ((SnakeWorld) getWorld()).getSnake().setDirection(direction);
+        }
     }
 }

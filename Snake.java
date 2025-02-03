@@ -80,34 +80,34 @@ public class Snake extends Actor {
         }
     }
 
-    // public void setDirection(String direction) {
-        // switch(direction) {
-            // case "UP":
-                // if(Y != 1) {
-                    // X = 0;
-                    // Y = -1;
-                // }
-                // break;
-            // case "DOWN":
-                // if(Y != -1) {
-                    // X = 0;
-                    // Y = 1;
-                // }
-                // break;
-            // case "LEFT":
-                // if(X != 1) {
-                    // X = -1;
-                    // Y = 0;
-                // }
-                // break;
-            // case "RIGHT":
-                // if(X != -1) {
-                    // X = 1;
-                    // Y = 0;
-                // }
-                // break;
-        // }
-    // }
+    public void setDirection(String direction) {
+        switch(direction) {
+            case "UP":
+                if(Y != 1) {
+                    X = 0;
+                    Y = -1;
+                }
+                break;
+            case "DOWN":
+                if(Y != -1) {
+                    X = 0;
+                    Y = 1;
+                }
+                break;
+            case "LEFT":
+                if(X != 1) {
+                    X = -1;
+                    Y = 0;
+                }
+                break;
+            case "RIGHT":
+                if(X != -1) {
+                    X = 1;
+                    Y = 0;
+                }
+                break;
+        }
+    }
 
     private void keys() {
         if (Greenfoot.isKeyDown("w") && Y != 1) {

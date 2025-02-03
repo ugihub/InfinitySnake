@@ -46,7 +46,7 @@ public class SnakeWorld extends World {
         requiredEats = level * 5; //level 1 butuh 5 makanan, level 2 butuh 10 makanan, dst.
 
         prepare();
-        // addControls();
+        addControls();
     }
 
     public void act() {
@@ -143,13 +143,13 @@ public class SnakeWorld extends World {
         showText("Level Reached: " + level, getWidth() / 2, getHeight() / 2 + 2);
     }
 
-    // private void addControls() {
-    // // Tambahkan tombol di bagian bawah layar
-    // addObject(new TouchButton("UP"), 25, 20);
-    // addObject(new TouchButton("DOWN"), 25, 24);
-    // addObject(new TouchButton("LEFT"), 22, 22);
-    // addObject(new TouchButton("RIGHT"), 28, 22);
-    // }
+    private void addControls() {
+    // Tambahkan tombol di bagian bawah layar
+    addObject(new TouchButton("UP"), 25, 20);
+    addObject(new TouchButton("DOWN"), 25, 24);
+    addObject(new TouchButton("LEFT"), 22, 22);
+    addObject(new TouchButton("RIGHT"), 28, 22);
+    }
 
     public Snake getSnake() {
     return snake;
